@@ -2,7 +2,7 @@
 
 # Ensure this script is only running on Arch Linux systems
 if ! command -v pacman &> /dev/null; then
-    echo "⚠️ pacman not found. Skipping Arch Linux installation."
+    echo "pacman not found. Skipping Arch Linux installation."
     exit 0
 fi
 
