@@ -1,0 +1,47 @@
+{
+    "$schema": "https://github.com",
+    "logo": {
+        "padding": {
+            "top": 2,
+            "left": 2
+        },
+        "color": {
+            "1": "blue", // Classic Arch Light Blue
+            "2": "cyan"  // Classic Arch Deep Cyan
+        }
+    },
+    "display": {
+       "separator": ": ",
+       "color": {
+           "keys": "magenta", // Left-side labels glow Dracula Pink
+           "title": "blue"    // Hostname turns Classic Arch Blue
+       }
+    },
+    "modules": [
+        { "type": "title", "color": { "user": "blue", "at": "magenta", "host": "blue" } },
+        "separator",
+        { "type": "os", "keyColor": "blue" },
+        { "type": "host", "keyColor": "blue" },
+        { "type": "kernel", "keyColor": "blue" },
+        { "type": "uptime", "keyColor": "blue" },
+        { "type": "packages", "keyColor": "blue" },
+        { "type": "shell", "keyColor": "blue" },
+        "break",
+        { "type": "display", "keyColor": "magenta" },
+        { "type": "wm", "keyColor": "magenta" },
+        { "type": "theme", "keyColor": "magenta" },
+        { "type": "icons", "keyColor": "magenta" },
+        { "type": "terminal", "keyColor": "magenta" },
+        { "type": "terminalfont", "keyColor": "magenta" },
+        "break",
+        { "type": "cpu", "keyColor": "cyan" },
+        { "type": "gpu", "keyColor": "cyan" },
+        { "type": "memory", "keyColor": "cyan" },
+        { "type": "swap", "keyColor": "cyan" },
+        { "type": "disk", "keyColor": "cyan" },
+        { "type": "localip", "keyColor": "cyan" },
+        "break",
+        { "type": "colors", "symbol": "circle" }
+    ]
+}
+

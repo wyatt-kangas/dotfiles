@@ -1,0 +1,39 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt SHARE_HISTORY HIST_IGNORE_DUPS
+
+autoload -Uz compinit && compinit
+alias ls='ls --color=auto'
+
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Auto-suggestions text color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#6272a4'          # Ghost text -> Dracula Muted Grey
+
+
+# Explicit syntax highlighting colors
+ZSH_HIGHLIGHT_STYLES[command]='fg=#bd93f9,bold'       # Commands -> Dracula Purple
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#50fa7b,bold'         # Aliases -> Dracula Green
+ZSH_HIGHLIGHT_STYLES[path]='fg=#8be9fd'               # Valid paths -> Dracula Cyan
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=#ff5555,bold' # Errors/Invalid commands -> Dracula Red
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=#f1fa8c' # 'Strings' -> Dracula Yellow
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=#f1fa8c' # "Strings" -> Dracula Yellow
+ZSH_HIGHLIGHT_STYLES[comment]='fg=#6272a4,italic'     # Code comments -> Dracula Comment Grey
+
+# Modern file listings with Eza (Nerd Font icons enabled)
+alias ls="eza --icons=always --color=always --group-directories-first"
+alias ll="eza -lah --icons=always --color=always --group-directories-first"
+alias tree="eza --tree --icons=always"
+
+
+eval "$(starship init zsh)"
+
+export EDITOR="nvim"
+export VISUAL="nvim"
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+
+fastfetch

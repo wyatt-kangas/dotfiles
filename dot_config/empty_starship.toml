@@ -1,0 +1,25 @@
+# Force the prompt to show hostname, username, and directory in order
+format = "$hostname$username$directory$character"
+
+# 1. Computer Name (Hostname)
+[hostname]
+ssh_only = false
+format = "[$hostname](fg:#50fa7b)" # Dracula Green
+
+# The "@" symbol joining them
+[username]
+show_always = true
+format = "[@$user](fg:#ff79c6)" # Dracula Pink
+disabled = false
+
+# 2. Current Directory with the leading colon
+[directory]
+format = "[:$path](fg:#8be9fd bold)" # Dracula Cyan
+truncation_length = 3
+truncation_symbol = "…/"
+
+# 3. The trailing prompt symbol
+[character]
+success_symbol = "[\\$ ](fg:#f8f8f2 bold)" # Dracula White
+error_symbol = "[\\$ ](fg:#ff5555 bold)"   # Dracula Red if last command failed
+

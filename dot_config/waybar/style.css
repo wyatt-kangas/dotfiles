@@ -1,0 +1,112 @@
+/* Global Reset & Base Typography */
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* The Core Bar Layer */
+window#waybar {
+    background-color: rgba(50, 80, 90, 0.5);  /* Changed to your solid blue color */
+    border-bottom: 2px solid #bd93f9;         /* Accent Line: Dracula Neon Purple */
+    color: #f8f8f2;                           /* Character White */
+}
+
+/* System Tray Dock */
+#tray {
+    padding: 0 10px;
+    margin: 4px 2px;
+}
+
+/* Center-Side: Hyprland Workspaces Container */
+#workspaces {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+/* Format every workspace into a floating, semi-transparent rectangle */
+#workspaces button {
+    padding: 0;
+    /* 8px top/bottom margin pulls them away from the bar edges */
+    margin: 8px 5px; 
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    /* Hide the original text numbers */
+    color: transparent; 
+    
+    /* Perfect geometric rectangle proportions */
+    min-width: 24px;
+    min-height: 10px; 
+    
+    /* Inactive State: Semi-transparent Dracula Grey outline */
+    border: 2px solid rgba(98, 114, 164, 0.4);
+    border-radius: 4px; 
+    
+    transition: all 0.2s ease;
+}
+
+/* Active State: Transparent with a glowing Neon Pink border line */
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: transparent;           /* Removed solid fill */
+    border: 2px solid rgba(255, 121, 198, 0.9); /* Glowing semi-transparent Pink border */
+    min-width: 38px;                          /* Stretches wide horizontally */
+}
+
+/* Hover State: When your cursor passes over a rectangle */
+#workspaces button:hover {
+    border-color: rgba(139, 233, 253, 0.8);     /* Turns Dracula Cyan */
+    background-color: rgba(139, 233, 253, 0.05); /* Very subtle inner cyan tint */
+}
+
+/* Center-Side: Active Window Title Text */
+#window {
+    color: #bd93f9;                           /* Active window title -> Dracula Purple */
+    font-weight: bold;
+}
+
+/* Right-Side: Diagnostic Module Badges */
+#clock,
+#cpu,
+#memory,
+#battery {
+    padding: 0 12px;
+    margin: 4px 3px;
+    border-radius: 6px;
+    background-color: rgba(68, 71, 90, 0.35); /* Subtle dark pill contrast overlays */
+}
+
+/* Individual Module Text Customizations */
+#cpu {
+    color: #8be9fd;                           /* CPU Usage -> Dracula Cyan */
+}
+
+#memory {
+    color: #f1fa8c;                           /* RAM Usage -> Dracula Yellow */
+}
+
+#battery {
+    color: #50fa7b;                           /* Full/Good Battery -> Dracula Green */
+}
+
+#battery.warning {
+    color: #ffb86c;                           /* Low Battery -> Dracula Orange */
+}
+
+#battery.critical:not(.charging) {
+    color: #ff5555;                           /* Critical State -> Dracula Red */
+}
+
+#custom-clock {
+    color: #ff79c6;                           /* Current Time -> Dracula Pink */
+    font-weight: bold;
+}
+
+#custom-notification {
+    color: #bd93f9; /* Dracula Purple */
+    padding: 0 10px;
+}
+

@@ -1,0 +1,66 @@
+/* Clean Reset and Base Typography */
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+/* The Main Outer Window Container */
+window {
+    background-color: rgba(50, 80, 90, 0.5); /* Your exact transparent teal */
+    border: 2px solid #bd93f9;               /* Dracula Neon Purple Window Border */
+    border-radius: 12px;
+}
+
+/* Outer layout padding box */
+#outer-box {
+    padding: 16px;
+    background-color: transparent;
+}
+
+/* Inner layout box */
+#inner-box {
+    background-color: transparent;
+}
+
+/* The Search Input Text Entry Field */
+#input {
+    background-color: rgba(68, 71, 90, 0.35); /* Muted slate contrast capsule */
+    border: 1px solid #6272a4;                /* Muted Dracula Grey outline */
+    border-radius: 6px;
+    padding: 8px 12px;
+    color: #f8f8f2;                           /* Character White Text */
+    margin-bottom: 12px;
+}
+
+/* The Scrollable Application Container */
+#scroll {
+    background-color: transparent;
+}
+
+/* Individual Application Entry Rows */
+#entry {
+    padding: 8px 12px;
+    margin: 2px 0;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+/* Text Layer Inside the Application Rows */
+#text {
+    color: #f8f8f2;                           /* Default Inactive App Text: White */
+}
+
+/* The Active Highlighted Row Selection */
+#entry:selected {
+    background-color: #44475a;               /* Darker focused slate fill */
+}
+
+/* Active Highlighted Text Selection Override */
+#entry:selected #text {
+    color: #ff79c6;                           /* Active App Text glows Dracula Pink */
+    font-weight: bold;
+}
+
+

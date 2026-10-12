@@ -1,0 +1,11 @@
+show=drun
+allow_images=false
+insensitive=true
+prompt=Search applications...
+
+# Fixed Geometric Scaling Properties
+width=500
+height=350
+location=center
+filter_rate=100
+
