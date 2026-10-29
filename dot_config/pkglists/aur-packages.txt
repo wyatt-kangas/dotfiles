@@ -1,0 +1,9 @@
+brave-bin
+cbonsai
+elephant-desktopapplications
+elephant-providerlist
+rose-pine-cursor
+rose-pine-hyprcursor
+spotify
+sunshine
+yay

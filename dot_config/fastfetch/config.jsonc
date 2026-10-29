@@ -39,7 +39,6 @@
         { "type": "memory", "keyColor": "cyan" },
         { "type": "swap", "keyColor": "cyan" },
         { "type": "disk", "keyColor": "cyan" },
-        { "type": "localip", "keyColor": "cyan" },
         "break",
         { "type": "colors", "symbol": "circle" }
     ]

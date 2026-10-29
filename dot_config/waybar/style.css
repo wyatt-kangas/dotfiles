@@ -68,11 +68,14 @@ window#waybar {
     font-weight: bold;
 }
 
-/* Right-Side: Diagnostic Module Badges */
+/* Slick Module Badges */
 #clock,
 #cpu,
 #memory,
-#battery {
+#battery,
+#network,
+#pulseaudio,
+#bluetooth {
     padding: 0 12px;
     margin: 4px 3px;
     border-radius: 6px;
@@ -82,6 +85,14 @@ window#waybar {
 /* Individual Module Text Customizations */
 #cpu {
     color: #8be9fd;                           /* CPU Usage -> Dracula Cyan */
+}
+
+#network {
+	color: #bd93f9;
+}
+
+#bluetooth {
+    color: #f1fa8c;
 }
 
 #memory {
@@ -110,3 +121,6 @@ window#waybar {
     padding: 0 10px;
 }
 
+#pulseaudio {
+color: #8be9fd;  /* Audio -> Dracula Cyan */
+}

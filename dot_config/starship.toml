@@ -1,5 +1,5 @@
 # Force the prompt to show hostname, username, and directory in order
-format = "$hostname$username$directory$character"
+format = "$hostname$username$directory$python$character"
 
 # 1. Computer Name (Hostname)
 [hostname]
@@ -17,6 +17,11 @@ disabled = false
 format = "[:$path](fg:#8be9fd bold)" # Dracula Cyan
 truncation_length = 3
 truncation_symbol = "…/"
+
+# Virtual Enviroment rules
+[python]
+format = "[(\\($virtualenv\\))](fg:#8be9fd) "
+detect_files = []
 
 # 3. The trailing prompt symbol
 [character]

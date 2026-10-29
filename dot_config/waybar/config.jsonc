@@ -8,15 +8,17 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/clock",
-		"custom/notification"
+		"custom/notification",
+		"pulseaudio",
+		"bluetooth"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
+		"network",
         "cpu",
         "memory",
-        "battery",
         "tray"
     ],
     // Modules configuration
@@ -90,7 +92,7 @@
     },
     "tray": {
         // "icon-size": 21,
-        "spacing": 10,
+        "spacing": 10
         // "icons": {
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
@@ -120,6 +122,13 @@
 	    "interval": 2,
 		"on-click": "dunstctl history-pop",
 		"on-click-right": "dunstctl close-all"
+	},
+		"bluetooth": {
+		"format": "󰂲",
+		"format-disabled": "",          // hides icon when BT is off
+		"format-connected": "󰂯",
+		"on-click": "blueman-manager",
+		"tooltip-format": "Bluetooth: {status}"
 	},
 	"cpu": {
         "format": "{usage}% ",
@@ -170,34 +179,23 @@
         "power-saver": ""
       }
     },
-    "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-    "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
+	"network": {
+		"format-wifi": "",
+		"format-ethernet": "",
+		"format-disconnected": "",
+		"on-click": "nm-connection-editor"
+	},
+		"pulseaudio": {
+		"format": "{icon}",
+		"format-muted": "",
+		"format-icons": {
+			"default": ["", " ", " "]
+		},
+		"tooltip-format": "{volume}%",
+		"scroll-step": 5,
+		"on-click": "pavucontrol",
+		"on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+	},
     "custom/media": {
         "format": "{icon} {text}",
         "return-type": "json",
@@ -222,5 +220,5 @@
 			"hibernate": "systemctl hibernate"
 		}
     }
-},
+}
 
