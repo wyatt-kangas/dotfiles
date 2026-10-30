@@ -75,6 +75,7 @@ window#waybar {
 #battery,
 #network,
 #pulseaudio,
+#custom-notification,
 #bluetooth {
     padding: 0 12px;
     margin: 4px 3px;

@@ -6,6 +6,7 @@ setopt SHARE_HISTORY HIST_IGNORE_DUPS
 autoload -Uz compinit && compinit
 alias ls='ls --color=auto'
 alias update='yay -Syu && flatpak update -y' 
+alias backup='~/.local/bin/weekly-backup.sh'
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
