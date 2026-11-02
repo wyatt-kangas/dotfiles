@@ -1,14 +1,10 @@
 {
     "$schema": "https://github.com",
     "logo": {
-        "padding": {
-            "top": 2,
-            "left": 2
-        },
-        "color": {
-            "1": "blue", // Classic Arch Light Blue
-            "2": "cyan"  // Classic Arch Deep Cyan
-        }
+		"color": {
+			"1": "blue",
+			"2": "cyan"
+		}
     },
     "display": {
        "separator": ": ",

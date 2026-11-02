@@ -34,65 +34,65 @@ hl(0, 'Error', { fg = '#F44747' })
 hl(0, 'Todo', { fg = '#F44747' })
 
 -- Treesitter highlight groups (modern @-capture names)
-hl(0, '@variable',           { fg = '#9CDCFE' })
-hl(0, '@variable.builtin',   { fg = '#9CDCFE' })
+hl(0, '@variable', { fg = '#9CDCFE' })
+hl(0, '@variable.builtin', { fg = '#9CDCFE' })
 hl(0, '@variable.parameter', { fg = '#9CDCFE' })
-hl(0, '@variable.other',     { fg = '#9CDCFE' })
-hl(0, '@field',              { fg = '#9CDCFE' })
-hl(0, '@property',           { fg = '#9CDCFE' })
+hl(0, '@variable.other', { fg = '#9CDCFE' })
+hl(0, '@field', { fg = '#9CDCFE' })
+hl(0, '@property', { fg = '#9CDCFE' })
 
-hl(0, '@function',           { fg = '#DCDCAA' })
-hl(0, '@function.builtin',   { fg = '#DCDCAA' })
-hl(0, '@function.macro',     { fg = '#DCDCAA' })
-hl(0, '@method',             { fg = '#DCDCAA' })
-hl(0, '@method.call',        { fg = '#DCDCAA' })
-hl(0, '@function.call',      { fg = '#DCDCAA' })
-hl(0, '@constructor',        { fg = '#DCDCAA' })
+hl(0, '@function', { fg = '#DCDCAA' })
+hl(0, '@function.builtin', { fg = '#DCDCAA' })
+hl(0, '@function.macro', { fg = '#DCDCAA' })
+hl(0, '@method', { fg = '#DCDCAA' })
+hl(0, '@method.call', { fg = '#DCDCAA' })
+hl(0, '@function.call', { fg = '#DCDCAA' })
+hl(0, '@constructor', { fg = '#DCDCAA' })
 
-hl(0, '@keyword',            { fg = '#569CD6' })
-hl(0, '@keyword.conditional',{ fg = '#569CD6' })
-hl(0, '@keyword.exception',  { fg = '#569CD6' })
-hl(0, '@keyword.function',   { fg = '#C586C0' })
-hl(0, '@keyword.operator',   { fg = '#569CD6' })
-hl(0, '@keyword.return',     { fg = '#C586C0' })
-hl(0, '@repeat',             { fg = '#C586C0' })
-hl(0, '@conditional',        { fg = '#C586C0' })
-hl(0, '@exception',          { fg = '#C586C0' })
+hl(0, '@keyword', { fg = '#569CD6' })
+hl(0, '@keyword.conditional', { fg = '#569CD6' })
+hl(0, '@keyword.exception', { fg = '#569CD6' })
+hl(0, '@keyword.function', { fg = '#C586C0' })
+hl(0, '@keyword.operator', { fg = '#569CD6' })
+hl(0, '@keyword.return', { fg = '#C586C0' })
+hl(0, '@repeat', { fg = '#C586C0' })
+hl(0, '@conditional', { fg = '#C586C0' })
+hl(0, '@exception', { fg = '#C586C0' })
 
-hl(0, '@string',             { fg = '#CE9178' })
-hl(0, '@string.special',     { fg = '#CE9178' })
-hl(0, '@character',          { fg = '#CE9178' })
+hl(0, '@string', { fg = '#CE9178' })
+hl(0, '@string.special', { fg = '#CE9178' })
+hl(0, '@character', { fg = '#CE9178' })
 
-hl(0, '@number',             { fg = '#B5CEA8' })
-hl(0, '@float',              { fg = '#B5CEA8' })
-hl(0, '@constant',           { fg = '#569CD6' })
-hl(0, '@constant.builtin',   { fg = '#569CD6' })
+hl(0, '@number', { fg = '#B5CEA8' })
+hl(0, '@float', { fg = '#B5CEA8' })
+hl(0, '@constant', { fg = '#569CD6' })
+hl(0, '@constant.builtin', { fg = '#569CD6' })
 
-hl(0, '@comment',            { fg = '#6A9955', italic = true })
+hl(0, '@comment', { fg = '#6A9955', italic = true })
 
-hl(0, '@type',               { fg = '#4EC9B0' })
-hl(0, '@type.builtin',       { fg = '#4EC9B0' })
-hl(0, '@annotation',         { fg = '#4EC9B0' })
-hl(0, '@attribute',          { fg = '#4EC9B0' })
+hl(0, '@type', { fg = '#4EC9B0' })
+hl(0, '@type.builtin', { fg = '#4EC9B0' })
+hl(0, '@annotation', { fg = '#4EC9B0' })
+hl(0, '@attribute', { fg = '#4EC9B0' })
 
-hl(0, '@operator',           { fg = '#D4D4D4' })
-hl(0, '@punctuation',        { fg = '#D4D4D4' })
-hl(0, '@punctuation.bracket',{ fg = '#D4D4D4' })
+hl(0, '@operator', { fg = '#D4D4D4' })
+hl(0, '@punctuation', { fg = '#D4D4D4' })
+hl(0, '@punctuation.bracket', { fg = '#D4D4D4' })
 hl(0, '@punctuation.delimiter', { fg = '#D4D4D4' })
 
-hl(0, '@label',              { fg = '#DCDCAA' })
-hl(0, '@module',             { fg = '#DCDCAA' })
-hl(0, '@namespace',          { fg = '#DCDCAA' })
-hl(0, '@tag',                { fg = '#569CD6' })
-hl(0, '@tag.delimiter',      { fg = '#6A9955' })
-hl(0, '@tag.attribute',      { fg = '#9CDCFE' })
+hl(0, '@label', { fg = '#DCDCAA' })
+hl(0, '@module', { fg = '#DCDCAA' })
+hl(0, '@namespace', { fg = '#DCDCAA' })
+hl(0, '@tag', { fg = '#569CD6' })
+hl(0, '@tag.delimiter', { fg = '#6A9955' })
+hl(0, '@tag.attribute', { fg = '#9CDCFE' })
 
-hl(0, '@preproc',            { fg = '#C586C0' })
-hl(0, '@include',            { fg = '#C586C0' })
-hl(0, '@define',             { fg = '#C586C0' })
+hl(0, '@preproc', { fg = '#C586C0' })
+hl(0, '@include', { fg = '#C586C0' })
+hl(0, '@define', { fg = '#C586C0' })
 
-hl(0, '@error',              { fg = '#F44747' })
-hl(0, '@warning',            { fg = '#F44747' })   
+hl(0, '@error', { fg = '#F44747' })
+hl(0, '@warning', { fg = '#F44747' })
 
 -- StatusLine
 hl(0, 'StatusLine', { bg = '#2e4c6f', fg = '#c0c0c0' })
@@ -116,6 +116,13 @@ vim.pack.add({
 	'https://github.com/saghen/blink.cmp',
 	'https://github.com/rafamadriz/friendly-snippets',
 	'https://github.com/romus204/tree-sitter-manager.nvim',
+	'https://github.com/m4xshen/autoclose.nvim',
+})
+
+require("autoclose").setup({
+	options = {
+		disabled_filetypes = { "text", "markdown" },
+	},
 })
 
 require('blink.cmp').setup({
