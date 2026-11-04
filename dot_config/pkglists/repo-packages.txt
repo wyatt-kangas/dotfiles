@@ -39,6 +39,7 @@ networkmanager
 nm-connection-editor
 noto-fonts-emoji
 npm
+ntfsprogs
 nvidia-open-dkms
 nvidia-utils
 pavucontrol
