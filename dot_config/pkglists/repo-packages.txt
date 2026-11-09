@@ -35,6 +35,7 @@ linux
 linux-firmware
 linux-headers
 lua-language-server
+mtr
 neovim
 networkmanager
 nm-connection-editor
