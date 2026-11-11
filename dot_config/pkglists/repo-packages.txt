@@ -11,6 +11,7 @@ cmatrix
 cowsay
 discord
 dunst
+efitools
 etckeeper
 ethtool
 eza
@@ -35,6 +36,7 @@ linux
 linux-firmware
 linux-headers
 lua-language-server
+mokutil
 mtr
 neovim
 networkmanager
@@ -56,10 +58,12 @@ ranger
 refind
 rsync
 rust
+sbctl
 sl
 starship
 sudo
 toilet
+tpm2-tools
 tree-sitter-cli
 ttf-jetbrains-mono-nerd
 ttf-nerd-fonts-symbols
